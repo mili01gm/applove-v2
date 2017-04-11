@@ -1,5 +1,6 @@
-var fotos = ["Producto 1","Producto 2","Producto 3","Producto 4","Producto 5","Producto 6","Producto 7","Producto 8","Producto 9","Producto 10","Producto 11","Producto 12"];
+var fotos = ["Tayman","Kerala","The Brass Coq","Sungenre","Mitragyna Speciosa","Foam King","Volition","Ink","Gilkon","Owls & Apples","Sherwood","Platinum"];
 var modal = document.getElementById('modal');
+
 function newSrc(num){
   return "assets/img/img-"+(num+1)+".jpg"
 }

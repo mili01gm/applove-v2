@@ -92,21 +92,25 @@ header {
   margin: 0 30px;
 }
 
+/*Main container of the section*/
 #work .work-container {
   margin: 10px;
 }
 
+/*Title*/
 .text-work {
   font-size: 35px;
   letter-spacing: 2px;
 }
 
+/*Big image on work section*/
 .main-products {
   text-align: center;
   padding-top: 70px;
   margin: 20px;
 }
 
+/*Div for the product's images*/
 #products {
   display: inline-block;
   width: 100%;
@@ -125,8 +129,10 @@ header {
   cursor: pointer;
 }
 
+/*Text for each image*/
 #grid-products .nb-0 {
   margin: 10px;
+  font-weight: 100;
 }
 
 /*MODAL for each photo*/
@@ -139,10 +145,10 @@ header {
     width: 100%;
     height: 100%;
     overflow: auto;
-    /*background-color: rgb(0,0,0);*/
     background-color: rgba(0,150,136,0.8);
 }
 
+/*No scrollbar during ModalMode*/
 .hidden {
   overflow: hidden;
 }
@@ -168,11 +174,11 @@ header {
   max-height: 100%;
 }
 
+/*Opening the modal*/
 #modal .open-modal {
    visibility:visible;
    opacity: 1;
    display: block;
-   background-color: rgba(0,0,0,0.8);
    position: fixed;
    top:0;
    left:0;
@@ -185,7 +191,7 @@ header {
    transition:all 1s;
 }
 
-/* Add Animation - Zoom in the Modal */
+/*Animation: Zoom in*/
 .modal {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.3s;
@@ -202,8 +208,9 @@ header {
     from {transform:scale(0)}
     to {transform:scale(1)}
 }
+/*End Animation*/
 
-
+/*Close X*/
 #modal span.close {
   position: absolute;
   top: 11.5%;
@@ -223,6 +230,7 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
+/*End Modal part*/
 
 /*well... footer*/
 footer {
