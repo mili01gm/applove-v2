@@ -16,12 +16,15 @@ function newProduct(elem){
   pic.addEventListener("click",function(e){
     e.preventDefault();
     var modal = document.getElementsByClassName('modal')[0];
+    var scroll = document.getElementById('toogle');
     document.getElementById("img01").setAttribute("src",this.src);
     modal.style.display = "block";
+    scroll.setAttribute("class","hidden");
     if(modal.style.display == "block"){
       document.getElementById('close').addEventListener("click",function(e){
         modal.style.display = "none";
-      })
+        scroll.removeAttribute("class");
+      });
     }
   });
   var span = document.createElement("span");
