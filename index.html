@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
-<body>
+<body class="toogle">
   <header>
     <div class="menu container">
       <a href="#" class="text-uppercase link">Services.</a>
@@ -58,93 +58,25 @@
     <div class="work-container">
       <h2 class="text-uppercase text-work">Work</h2>
       <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-      <div class="products">
-        <div class="main-products">
-          <img src="assets/img/hero.png" alt="" width="900">
+      <div class="main-products">
+        <img src="assets/img/hero.png" alt="" width="900">
+      </div>
+      <div id="products">
+        <!-- Aquí van las fotos de los productos -->
+      </div>
+      <div id="modal" class="wrapper">
+        <div id="modal-container">
+          <img id="img01" alt="" width="320">
+          <span id="span01"></span>
+          <a class="close" href="#">&times;</a>
         </div>
-        <div class="grid-products">
-          <figure>
-            <img src="assets/img/img-1.jpg" alt="" width="320">
-            <figcaption class="nb-0">
-              <span>Nombre del producto</span>
-            </figcaption>
-          </figure>
-          <div class="modal">
-            <span class="close"></span>
-            <img src="assets/img/img-1.jpg" alt="">
-            <span></span>
-          </div>
-        </div>
-        <div class="grid-products">
-          <figure>
-            <img src="assets/img/img-1.jpg" alt="" width="320">
-            <figcaption class="nb-0">
-              <span>Nombre del producto</span>
-            </figcaption>
-          </figure>
-          <div class="modal">
-            <span class="close"></span>
-            <img src="assets/img/img-1.jpg" alt="">
-            <span></span>
-          </div>
-        </div>
-        <div class="grid-products">
-          <figure>
-            <img src="assets/img/img-1.jpg" alt="" width="320">
-            <figcaption class="nb-0">
-              <span>Nombre del producto</span>
-            </figcaption>
-          </figure>
-          <div class="modal">
-            <span class="close"></span>
-            <img src="assets/img/img-1.jpg" alt="">
-            <span></span>
-          </div>
-        </div>
-        <div class="grid-products">
-          <figure>
-            <img src="assets/img/img-1.jpg" alt="" width="320">
-            <figcaption class="nb-0">
-              <span>Nombre del producto</span>
-            </figcaption>
-          </figure>
-          <div class="modal">
-            <span class="close"></span>
-            <img src="assets/img/img-1.jpg" alt="">
-            <span></span>
-          </div>
-        </div>
-        <div class="grid-products">
-          <figure>
-            <img src="assets/img/img-1.jpg" alt="" width="320">
-            <figcaption class="nb-0">
-              <span>Nombre del producto</span>
-            </figcaption>
-          </figure>
-          <div class="modal">
-            <span class="close"></span>
-            <img src="assets/img/img-1.jpg" alt="">
-            <span></span>
-          </div>
-        </div>
-        <div class="grid-products">
-          <figure>
-            <img src="assets/img/img-1.jpg" alt="" width="320">
-            <figcaption class="nb-0">
-              <span>Nombre del producto</span>
-            </figcaption>
-          </figure>
-          <div class="modal">
-            <span class="close"></span>
-            <img src="assets/img/img-1.jpg" alt="">
-            <span></span>
-          </div>
-        </div>
+      </div>
       </div>
     </div>
   </section>
   <footer>
     <p>&copy; Copyright</p>
   </footer>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

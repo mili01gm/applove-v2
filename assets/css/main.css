@@ -3,6 +3,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
+/*HEADER y menú*/
 header {
   position: fixed;
   background: white;
@@ -32,6 +33,7 @@ header {
   float: right;
 }
 
+/*HOME*/
 #home {
   background-image: url(../img/bg-home.jpg);
   background-position: center;
@@ -63,6 +65,7 @@ header {
   font-size: 14px;
 }
 
+/*SERVICES*/
 #services {
   background-color: #F17C72;
   text-align: center;
@@ -81,14 +84,7 @@ header {
   letter-spacing: 2px;
 }
 
-footer {
-  text-align: center;
-  height: 70px;
-  padding-top: 7px;
-  color: #fff;
-  background: #373B47;
-}
-
+/*WORK section*/
 #work {
   text-align: center;
   padding-top: 70px;
@@ -104,37 +100,94 @@ footer {
   letter-spacing: 2px;
 }
 
-.products {
-  display: inline-block;
-  width: 100%;
-}
-
-.products .main-products {
+.main-products {
   text-align: center;
   padding-top: 70px;
   margin: 20px;
 }
 
-.products .grid-products {
+#products {
+  display: inline-block;
+  width: 100%;
+}
+
+/*Products gallery*/
+#products #grid-products {
   display: inline-block;
   width: 30%;
   margin-bottom: 40px;
   transition: all 0.4s;
 }
 
-.products .grid-products:hover {
+#products #grid-products:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-.grid-products .nb-0 {
+#grid-products .nb-0 {
   margin: 10px;
 }
 
-.modal {
-  display: none;
-  background: #00bfa5;
-  position: fixed;
-  z-index: 1;
-  
+/*MODAL for the gallery*/
+#modal {
+  visibility: hidden;
+  margin-top: -30%;
+  display: block;
+  text-align: center;
+  z-index: 0;
+}
+
+#modal #img01 {
+  display: block;
+  border: 2px solid white;
+  margin: 50px auto 20px auto;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  max-width: 100%;
+  height: 480px;
+  max-height: 100%;
+}
+
+#modal #span01 {
+  color: #fff;
+}
+
+#modal:target {
+   visibility:visible;
+   opacity: 1;
+   display: block;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   -webkit-transition:all 1s;
+   -moz-transition:all 1s;
+   transition:all 1s;
+}
+
+#modal a.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/*well... footer*/
+footer {
+  text-align: center;
+  height: 70px;
+  padding-top: 7px;
+  color: #fff;
+  background: #373B47;
 }
