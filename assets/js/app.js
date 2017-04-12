@@ -13,7 +13,7 @@ function newProduct(elem){
   var pic = document.createElement("img");
   var indice = fotos.indexOf(elem);
   pic.setAttribute("src", newSrc(indice));
-  pic.setAttribute("width","320");
+  // pic.setAttribute("width","320");
   pic.addEventListener("click",function(e){
     e.preventDefault();
     var modal = document.getElementsByClassName('modal')[0];

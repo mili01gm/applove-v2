@@ -110,6 +110,11 @@ header {
   margin: 20px;
 }
 
+.main-products img {
+  width: 900px;
+  max-width: 100%;
+}
+
 /*Div for the product's images*/
 #products {
   display: inline-block;
@@ -129,10 +134,18 @@ header {
   cursor: pointer;
 }
 
+#grid-products img {
+  width: 320px;
+  max-width: 100%;
+  /*min-width: 100%;*/
+}
+
 /*Text for each image*/
 #grid-products .nb-0 {
-  margin: 40px;
-  font-weight: 100;
+  font-size: 18px;
+  margin-top: 40px;
+  font-weight: 100px;
+  font-size: 2vw;
 }
 
 /*MODAL for each photo*/
@@ -163,7 +176,8 @@ header {
 }
 
 #modal #img01 {
-  display: block;
+  display: absolute;
+  display: inline-block;
   border: 20px solid #f1f1f1;
   margin: 5% auto 20px auto;
   top: 50%;
@@ -213,9 +227,10 @@ header {
 /*Close X*/
 #modal span.close {
   position: absolute;
-  top: 11.5%;
-  right: 33%;
-  color: #009688;
+  display: inline-block;
+  top: 6%;
+  right: inherit;
+  color: #f1f1f1;
   font-size: 70px;
   font-weight: 400;
   transition: 0.3s;
